@@ -1,0 +1,178 @@
+html {
+    font-family: "Montserrat", sans-serif;
+  }
+  /*
+    1. Use a more-intuitive box-sizing model.
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+      3. Allow percentage-based heights in the application
+    */
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /*
+    7. Remove built-in form typography styles
+  */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+  }
+  
+  /*
+    8. Avoid text overflows
+  */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+body{
+    height: 134vh;
+    background-image: linear-gradient(to right, aqua, rgb(235, 168, 229), rgb(241, 148, 164));
+}
+
+.wrapper{
+    background-color: white;
+    width: 95%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.navigation{
+    display: flex;
+    margin: 15px 10px 0px 20px;
+    /* justify-content: flex-end; */
+}
+
+.navigation p{
+    flex-basis: 100%;
+    font-weight: bold;
+    /* font-size: 30px; */
+}
+
+.navigation ul{
+    flex-basis: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    /* align-self: flex-end; */
+}
+
+.navigation ul li{
+    margin-left: 20px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation ul li #prev-work{
+    background-color: black;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.top-section{
+    display: flex;
+    width: 77%;
+    margin: 80px auto;
+}
+
+.profile-img-container{
+    flex-basis: 60%;
+}
+
+.introductory-message{
+    flex-basis: 100%;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.profile-img-container img{
+    width: 300px;
+    height: 350px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+.top-section p{
+    font-size: 17px;
+    text-align: justify;
+    width: 90%;
+}
+
+.top-section h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.bottom-section{
+    display: flex;
+    width: 77%;
+    margin: 80px auto 60px auto;
+}
+
+.bottom-section span{
+    display: flex;
+}
+
+.bottom-section span li{
+    list-style-type: none;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 4px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.skills, .career-history{
+    flex-basis: 100%;
+}
+
+.career-history{
+    margin-right: 50px;
+}
+
+.career-history h1{
+    margin-bottom: 8px;
+}
+
+.career-history p{
+    text-align: justify;
+    width: 90%;
+}
+
